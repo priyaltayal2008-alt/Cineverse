@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cineverse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -62,6 +65,24 @@
                     </div>
                 </div>
 
+                <div class="slide">
+                    <img src="https://images.wallpapersden.com/image/download/interstellar-movie-poster_bGplZ2iUmZqaraWkpJRnZW1lrWZlbWU.jpg">
+                    <div class="hero-info">
+                        <h1>Interstellar</h1>
+                        <p>⭐ 8.6</p>
+                        <button>Watch Now</button>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="https://wallpaperaccess.com/full/317501.jpg">
+                    <div class="hero-info">
+                        <h1>Inception</h1>
+                        <p>⭐ 8.8</p>
+                        <button>Watch Now</button>
+                    </div>
+                </div>
+
             </div>
 
             <button class="prev">&#10094;</button>
@@ -71,6 +92,22 @@
 
         <div id="movies-container"></div>
 
+    </div>
+
+    <!-- Movie detail modal -->
+    <div id="movie-modal" class="modal" aria-hidden="true">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content" role="dialog" aria-modal="true">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <div class="modal-body">
+                <img id="modal-poster" src="" alt="poster">
+                <div class="modal-info">
+                    <h2 id="modal-title">Title</h2>
+                    <p id="modal-rating">⭐ 0.0</p>
+                    <p id="modal-overview">Overview</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer class="footer">
